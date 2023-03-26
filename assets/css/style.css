@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   border: none;
-  box-sizing: border-box;
 }
 
 body {
@@ -15,9 +14,8 @@ body {
 
 /* headings and logo */
 
-h1,
-h2 {
-  font-family: oswald, sans-serif;
+h1, h2 {
+  font-family: Oswald, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #252525;
@@ -26,6 +24,7 @@ h2 {
 #logo {
   float: left;
   font-size: 280%;
+  margin-left: 30px;
 }
 
 /* navigation links */
@@ -35,15 +34,14 @@ h2 {
   letter-spacing: 4px;
 }
 
-#menu,
-#logo {
+#menu, #logo {
   line-height: 75px;
 }
 
 #menu li {
   float: right;
   list-style-type: none;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 #menu a {
@@ -70,7 +68,7 @@ h2 {
 
 }
 
-#cover-text, #cover-text h2{
+#cover-text, #cover-text h2 {
   color: #fff;
 
 }
@@ -78,8 +76,8 @@ h2 {
 #hero-image {
   height: 600px;
   width: 100%;
-  background: url(../images/hero-image.webp) no-repeat center center;
-  
+  background: url("../images/hero-image.webp") no-repeat center center;
+
   /* animates zoom effect on loading page */
   animation-name: hero-zoom;
   animation-duration: 5s;
@@ -97,9 +95,9 @@ h2 {
   }
 }
 
-#cover-text{
+#cover-text {
   font-size: 130%;
-  font-family: oswald;
+  font-family: Oswald, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
 
@@ -113,39 +111,38 @@ h2 {
 
   bottom: 30px;
   right: 150px;
-  
+
   position: absolute;
 }
 
-#club-ethos{
+#club-ethos {
   height: 600px;
 }
 
-#left-about{
+#left-about {
   padding-top: 30px;
   width: 33%;
   float: left;
 }
 
-#right-about{
+#right-about {
   padding-top: 30px;
   width: 33%;
   float: right;
 }
 
-#center-about{
+#center-about {
   width: 33%;
   margin: 0 auto;
-  background-color: green; 
 }
 
-hr{
+hr {
   border-top: 1px solid #3a3a3a;
   width: 100%;
   margin: 5px 0;
 }
 
-.left-about-heading{
+.left-about-heading {
   width: 60%;
   float: right;
   line-height: 20px;
@@ -153,7 +150,7 @@ hr{
   margin-bottom: 50px;
 }
 
-.right-about-heading{
+.right-about-heading {
   width: 60%;
   float: left;
   line-height: 20px;
@@ -161,7 +158,7 @@ hr{
   margin-bottom: 50px;
 }
 
-.right-about-heading h2{
+.right-about-heading h2 {
   text-align: right;
 }
 
@@ -169,20 +166,25 @@ hr{
   text-align: right;
 }
 
+#welcome {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 280%;
+}
 
+#circle-container {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#circle-container-bg {
+  background: url("../images/ethos-center-image.jpg") no-repeat center center;
+  height: 100%;
+  border-radius: 50%;
+}
